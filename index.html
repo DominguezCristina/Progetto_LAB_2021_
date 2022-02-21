@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manifesti animati</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<style>
+
+	body {
+		overflow: hidden;
+		display: block;
+
+	}
+
+	p {
+		margin:0;
+		display: block;
+	}
+
+	.centrato {
+		margin-top: 10%;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+	}
+
+	.buttonleft a{
+		background: white;
+		color:black;
+	}
+
+	.griglia {
+		margin:0px;
+	}
+
+</style>
+
+
+<body>
+
+
+	<div class="griglia">
+	  		<h3 style="background: black; color:white; width:auto;" class="span_12">Questa pagina web è un piccolo archivio di manifesti in movimento, nello specifico vedrete dei manifesti relativi a dei festival o delle sagre che si svolgono in Ticino. </h3>
+	</div>
+
+	<div class="griglia">
+	  	<div class="span_3"></div>
+	  		<p class="span_7 paragrafobase"> 
+				
+			</p>
+	</div>
+
+
+	<div class="griglia">
+		<div class="span_10"></div>
+		<div class="buttonright span_2">
+			    <a href="Manifesto_1.html">Vai ai manifesti</a>
+		 </div>
+	</div>
+
+
+
+
+<div class="cursor"></div>
+
+<script type="text/javascript">
+	const cursor = document.querySelector('.cursor');
+  	document.addEventListener ('mousemove',(e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  })
+
+	//video
+	document.getElementById("videoplayer").addEventListener("mouseover", function() {
+	this.play();
+	});
+
+	document.getElementById("videoplayer").addEventListener("mouseleave", function() {
+	this.pause();
+	}); 
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
